@@ -3,15 +3,20 @@ import { Flex } from "antd";
 import { CrudHeader } from "./components/Header";
 import { CardsList } from "./components/List";
 import { CrudWrapper } from "./style";
+import { NewCardModal } from "./components/NewCardModal";
 
 export const Crud: FC = () => {
   return (
-    <CrudWrapper>
-      <Flex vertical className="container">
-        <CrudHeader />
-        <hr className="hr-line" />
-        <CardsList />
-      </Flex>
-    </CrudWrapper>
+    <>
+      <CrudWrapper>
+        <Flex vertical className="container">
+          <CrudHeader />
+          <hr className="hr-line" />
+          <CardsList />
+        </Flex>
+      </CrudWrapper>
+
+      <NewCardModal />
+    </>
   );
 };
