@@ -92,7 +92,7 @@ export const NewCardModal: FC = () => {
 
         <Form.Item
           name="description"
-          label="Description (optional)"
+          label="Description"
           rules={[
             { required: true, message: "Please enter a description." },
             {
